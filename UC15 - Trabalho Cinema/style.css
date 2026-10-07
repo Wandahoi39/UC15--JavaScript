@@ -1,0 +1,216 @@
+/*CONFIGURAÇÕES GERAIS E PALETA DE CORES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #210100; 
+    color: #fece79;
+}
+
+/*CONTAINER PRINCIPAL*/
+.container {
+    width: 90%;
+    max-width: 650px;
+    padding: 35px;
+    text-align: center;
+    background: #210100;
+    border-radius: 15px;
+    border: 3px solid #8c0902;
+    box-shadow: 0 0 25px rgba(140, 9, 2, 0.6);
+}
+
+h1 {
+    color: #e6a341;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #fece79;
+    margin-bottom: 25px;
+}
+
+.pontuacao {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #fece79;
+}
+
+#pontos {
+    color: #e6a341;
+    font-weight: bold;
+}
+
+/*CAIXA DE PISTAS*/
+.pista {
+    background: #2a0302;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 5px solid #b14a36; /* Vermelho claro */
+}
+
+.pista h2 {
+    color: #e6a341; /* Amarelo mostarda */
+    margin-bottom: 15px;
+}
+
+.pista p {
+    line-height: 1.6;
+    color: #fece79; /* Amarelo claro */
+}
+
+/*INPUTS E BOTÕES*/
+input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #b14a36;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    outline: none;
+    background: #fece79;
+    color: #210100;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #8c0902;
+    opacity: 0.7;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #8c0902;
+    color: #fece79;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #b14a36;
+}
+
+#botaoPista {
+    background: #210100;
+    color: #e6a341;
+    border: 2px solid #e6a341;
+}
+
+#botaoPista:hover {
+    background: #e6a341;
+    color: #210100;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e6a341;
+}
+
+#resultado {
+    margin-top: 15px;
+    color: #fece79;
+}
+
+#reiniciar {
+    display: none;
+    margin-top: 20px;
+    background: #210100;
+    color: #fece79;
+    border: 2px solid #b14a36;
+}
+
+#reiniciar:hover {
+    background: #b14a36;
+    color: #fece79;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 600px) {
+    .botoes {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+}
+
+/*ANIMAÇÕES E TRANSIÇÕES*/
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.troca-filme-animacao {
+    animation: trocarFilmeAnim 1.2s ease-in-out;
+}
+
+@keyframes trocarFilmeAnim {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        opacity: 0;
+        transform: scale(0.92) rotate(-1deg);
+        box-shadow: 0 0 50px rgba(230, 163, 65, 0.8);
+    }
+    70% {
+        opacity: 0;
+        transform: scale(0.92) rotate(1deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
