@@ -1,8 +1,8 @@
 // BANCO DE DADOS DOS FILMES
-// Adicione ou edite os filmes e pistas aqui!
+
 const bancoDeFilmes = [
     {
-        respostasValidas: ["homem aranha", "homem-aranha", "spiderman", "spider-man"],
+        respostasValidas: ["homem aranha", "homem-aranha", "spiderman", "spider-man", "miranha"],
         pistas: [
             "O protagonista é um jovem que leva uma vida comum, mas acaba ganhando poderes especiais.",
             "O personagem consegue escalar paredes e se movimentar pelas cidades.",
@@ -12,7 +12,7 @@ const bancoDeFilmes = [
         ]
     },
     {
-        respostasValidas: ["harry potter", "harry potter e a pedra filosofal"],
+        respostasValidas: ["harry potter", "harry potter e a pedra filosofal", "harry", "potter", "harry-potter"],
         pistas: [
             "O protagonista descobre no seu aniversário de 11 anos que possui capacidades mágicas.",
             "Ele recebe uma carta para estudar em um colégio interno muito especial.",
@@ -30,6 +30,40 @@ const bancoDeFilmes = [
             "O vilão da história é o seu próprio tio, que busca tomar o trono.",
             "O filme conta a jornada de Simba para se tornar o rei da floresta."
         ]
+
+    },
+    {
+        respostasValidas: ["as branquelas", "branquelas", "white chicks"],
+        pistas: [
+            "Dois agentes se envolvem em uma missão disfarçados.",
+            "Dois irmãos precisam assumir uma identidade completamente diferente para proteger duas pessoas importantes de um plano criminoso.",
+            " Em uma festa da alta sociedade, duas pessoas chamam atenção por suas atitudes exageradas, suas roupas elegantes e suas tentativas de se encaixar em um grupo de patricinhas.",
+            "Para solucionar um caso de sequestro, dois investigadores do FBI acabam frequentando eventos sociais e tentando conquistar a confiança de pessoas que vivem cercadas de luxo, fofocas e rivalidades.",
+            "Uma operação policial dá errado quando as verdadeiras integrantes de uma família rica sofrem um pequeno acidente antes de um evento importante. Para não comprometer a investigação, dois agentes precisam improvisar uma transformação radical e sustentar uma farsa diante de uma sociedade que valoriza aparência e status."
+        ]
+        
+    },
+    {
+        respostasValidas: ["frozen", "elsa"],
+        pistas: [
+            "A história começa em um reino que passa por uma grande mudança.",
+            " Duas pessoas acabam se afastando por causa de um segredo.",
+            "Uma habilidade especial acaba trazendo consequências inesperadas para o reino.",
+            "Uma das personagens decide se afastar de todos e construir uma nova vida.",
+            "Para resolver o problema, as personagens descobrem que o amor pode aparecer de diferentes formas."
+        ]
+        
+    },
+    {
+        respostasValidas: ["como treinar seu dragão", "how to train your dragon", "como treinar o seu dragão", "treinar seu dragão"],
+        pistas: [
+            "Um jovem que não se encaixa nas tradições de seu povo acaba mudando a relação entre humanos e criaturas consideradas inimigas.",
+            "O protagonista faz amizade com um dragão preto muito veloz, que não consegue voar direito sozinho depois de sofrer um ferimento.",
+            "O jovem pertence a uma tribo viking que acredita que os dragões são inimigos perigosos, mas ele descobre que essas criaturas são diferentes do que todos imaginam.",
+            "O dragão se chama Banguela, e seu melhor amigo humano é o Soluço!",
+            "O título do filme começa com “Como Treinar...” e conta a história da amizade entre um viking e um dragão."
+        ]
+        
     }
 ];
 
